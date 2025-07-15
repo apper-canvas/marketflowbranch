@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import ApperIcon from "@/components/ApperIcon";
@@ -7,10 +7,22 @@ import Badge from "@/components/atoms/Badge";
 import Button from "@/components/atoms/Button";
 
 const ProductCard = ({ product, onAddToCart }) => {
+  const [imageError, setImageError] = useState(false);
+  const [imageLoading, setImageLoading] = useState(true);
+
   const handleAddToCart = (e) => {
     e.preventDefault();
     e.stopPropagation();
     onAddToCart(product);
+  };
+
+  const handleImageError = () => {
+    setImageError(true);
+    setImageLoading(false);
+  };
+
+  const handleImageLoad = () => {
+    setImageLoading(false);
   };
 
   return (
@@ -20,11 +32,30 @@ const ProductCard = ({ product, onAddToCart }) => {
     >
       <Link to={`/product/${product.Id}`}>
         <div className="relative overflow-hidden">
-          <img
-            src={product.images[0]}
-            alt={product.title}
-            className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-          />
+          {imageError ? (
+            <div className="w-full h-48 bg-gray-100 flex items-center justify-center group-hover:bg-gray-50 transition-colors duration-300">
+              <div className="text-center">
+                <ApperIcon name="Package" size={48} className="text-gray-400 mx-auto mb-2" />
+                <p className="text-sm text-gray-500">Product Image</p>
+              </div>
+            </div>
+          ) : (
+            <>
+              {imageLoading && (
+                <div className="absolute inset-0 bg-gray-100 flex items-center justify-center">
+                  <div className="w-full h-48 bg-gray-200 animate-pulse rounded"></div>
+                </div>
+              )}
+              <img
+                src={product.images[0]}
+                alt={product.title}
+                className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                onError={handleImageError}
+                onLoad={handleImageLoad}
+                style={{ display: imageLoading ? 'none' : 'block' }}
+              />
+            </>
+          )}
           {product.isPrime && (
             <div className="absolute top-2 left-2">
               <Badge variant="prime" size="sm">
