@@ -1,0 +1,482 @@
+[
+  {
+    "Id": 1,
+    "title": "iPhone 14 Pro Max - 256GB Deep Purple",
+    "price": 1199.99,
+    "discountPrice": 1099.99,
+    "rating": 4.6,
+    "reviewCount": 2847,
+    "images": [
+      "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1574944985070-8f3ebc6b2290?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1556656793-08538906a9f8?w=500&h=500&fit=crop"
+    ],
+    "category": "Electronics",
+    "description": "Experience the ultimate iPhone with Pro cameras, A16 Bionic chip, and Always-On display. Features advanced camera system, incredible battery life, and premium titanium design.",
+    "specifications": {
+      "Display": "6.7-inch Super Retina XDR",
+      "Chip": "A16 Bionic",
+      "Camera": "48MP Main, 12MP Ultra Wide, 12MP Telephoto",
+      "Storage": "256GB",
+      "Battery": "Up to 29 hours video playback"
+    },
+    "isPrime": true,
+    "inStock": true
+  },
+  {
+    "Id": 2,
+    "title": "Samsung Galaxy S23 Ultra - 512GB Phantom Black",
+    "price": 1299.99,
+    "discountPrice": 1149.99,
+    "rating": 4.5,
+    "reviewCount": 1923,
+    "images": [
+      "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1574944985070-8f3ebc6b2290?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1556656793-08538906a9f8?w=500&h=500&fit=crop"
+    ],
+    "category": "Electronics",
+    "description": "The most powerful Galaxy smartphone ever, featuring 200MP camera, S Pen integration, and all-day battery life. Perfect for creativity and productivity.",
+    "specifications": {
+      "Display": "6.8-inch Dynamic AMOLED 2X",
+      "Processor": "Snapdragon 8 Gen 2",
+      "Camera": "200MP Main, 12MP Ultra Wide, 10MP Telephoto",
+      "Storage": "512GB",
+      "Battery": "5000mAh with 45W fast charging"
+    },
+    "isPrime": true,
+    "inStock": true
+  },
+  {
+    "Id": 3,
+    "title": "MacBook Pro 14-inch - M2 Pro Chip, 16GB RAM, 512GB SSD",
+    "price": 2499.99,
+    "discountPrice": 2299.99,
+    "rating": 4.8,
+    "reviewCount": 1456,
+    "images": [
+      "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=500&h=500&fit=crop"
+    ],
+    "category": "Electronics",
+    "description": "Supercharged by M2 Pro chip, featuring stunning Liquid Retina XDR display, advanced camera and audio, and all-day battery life for professionals.",
+    "specifications": {
+      "Display": "14.2-inch Liquid Retina XDR",
+      "Chip": "Apple M2 Pro",
+      "Memory": "16GB unified memory",
+      "Storage": "512GB SSD",
+      "Battery": "Up to 18 hours"
+    },
+    "isPrime": true,
+    "inStock": true
+  },
+  {
+    "Id": 4,
+    "title": "Sony WH-1000XM5 Wireless Noise Canceling Headphones",
+    "price": 399.99,
+    "discountPrice": 299.99,
+    "rating": 4.7,
+    "reviewCount": 3201,
+    "images": [
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=500&h=500&fit=crop"
+    ],
+    "category": "Electronics",
+    "description": "Industry-leading noise cancellation with premium sound quality, 30-hour battery life, and crystal-clear hands-free calling.",
+    "specifications": {
+      "Driver": "30mm dome type",
+      "Frequency Response": "4Hz-40kHz",
+      "Battery Life": "30 hours",
+      "Connectivity": "Bluetooth 5.2, NFC",
+      "Weight": "250g"
+    },
+    "isPrime": true,
+    "inStock": true
+  },
+  {
+    "Id": 5,
+    "title": "Nike Air Max 270 React - Men's Running Shoes",
+    "price": 159.99,
+    "discountPrice": 119.99,
+    "rating": 4.3,
+    "reviewCount": 2567,
+    "images": [
+      "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=500&h=500&fit=crop"
+    ],
+    "category": "Fashion",
+    "description": "Comfortable running shoes with React foam cushioning and 270 Air unit for maximum comfort and style. Perfect for daily wear and light exercise.",
+    "specifications": {
+      "Upper": "Textile and synthetic leather",
+      "Midsole": "React foam",
+      "Outsole": "Rubber with waffle pattern",
+      "Weight": "10.8 oz",
+      "Sizes": "7-13 US"
+    },
+    "isPrime": true,
+    "inStock": true
+  },
+  {
+    "Id": 6,
+    "title": "Levi's 501 Original Fit Jeans - Men's",
+    "price": 89.99,
+    "discountPrice": 69.99,
+    "rating": 4.4,
+    "reviewCount": 4123,
+    "images": [
+      "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1475178626620-a4d074967452?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1576995853123-5a10305d93c0?w=500&h=500&fit=crop"
+    ],
+    "category": "Fashion",
+    "description": "The original blue jean since 1873. Crafted with premium denim and classic straight fit that never goes out of style.",
+    "specifications": {
+      "Material": "100% Cotton Denim",
+      "Fit": "Original Straight",
+      "Rise": "Mid-rise",
+      "Leg Opening": "16 inches",
+      "Care": "Machine wash cold"
+    },
+    "isPrime": false,
+    "inStock": true
+  },
+  {
+    "Id": 7,
+    "title": "Instant Pot Duo 7-in-1 Electric Pressure Cooker - 8 Quart",
+    "price": 149.99,
+    "discountPrice": 99.99,
+    "rating": 4.6,
+    "reviewCount": 5674,
+    "images": [
+      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1572013456891-55cbc2886bbb?w=500&h=500&fit=crop"
+    ],
+    "category": "Home & Garden",
+    "description": "7-in-1 functionality: pressure cook, slow cook, rice cooker, steamer, sauté, yogurt maker, and warmer. Perfect for busy families.",
+    "specifications": {
+      "Capacity": "8 Quart",
+      "Functions": "7-in-1 Multi-Use",
+      "Material": "Stainless Steel",
+      "Safety": "10+ safety features",
+      "Warranty": "1 year"
+    },
+    "isPrime": true,
+    "inStock": true
+  },
+  {
+    "Id": 8,
+    "title": "Dyson V15 Detect Absolute Cordless Vacuum",
+    "price": 749.99,
+    "discountPrice": 649.99,
+    "rating": 4.5,
+    "reviewCount": 1834,
+    "images": [
+      "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1586627892040-b6b285475270?w=500&h=500&fit=crop"
+    ],
+    "category": "Home & Garden",
+    "description": "Most powerful suction with laser dust detection, LCD screen showing real-time data, and up to 60 minutes runtime.",
+    "specifications": {
+      "Suction Power": "230 AW",
+      "Runtime": "Up to 60 minutes",
+      "Bin Capacity": "0.77 liters",
+      "Weight": "3.0 kg",
+      "Filtration": "Whole-machine HEPA"
+    },
+    "isPrime": true,
+    "inStock": true
+  },
+  {
+    "Id": 9,
+    "title": "The Seven Husbands of Evelyn Hugo - Novel",
+    "price": 17.99,
+    "discountPrice": 12.99,
+    "rating": 4.9,
+    "reviewCount": 12456,
+    "images": [
+      "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=500&h=500&fit=crop"
+    ],
+    "category": "Books",
+    "description": "A captivating novel about a reclusive Hollywood icon who finally decides to tell her story to a young journalist. A tale of love, secrets, and sacrifice.",
+    "specifications": {
+      "Author": "Taylor Jenkins Reid",
+      "Pages": "400",
+      "Publisher": "Atria Books",
+      "Language": "English",
+      "Format": "Paperback"
+    },
+    "isPrime": true,
+    "inStock": true
+  },
+  {
+    "Id": 10,
+    "title": "Fenty Beauty Gloss Bomb Universal Lip Luminizer",
+    "price": 19.99,
+    "discountPrice": 15.99,
+    "rating": 4.6,
+    "reviewCount": 3456,
+    "images": [
+      "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1596704654774-e1b5b4ab5b93?w=500&h=500&fit=crop"
+    ],
+    "category": "Beauty",
+    "description": "Universal lip gloss that delivers explosive shine and addictive comfort. Formulated to flatter all skin tones.",
+    "specifications": {
+      "Brand": "Fenty Beauty",
+      "Shade": "Fenty Glow",
+      "Size": "0.3 fl oz",
+      "Finish": "Glossy",
+      "Cruelty-Free": "Yes"
+    },
+    "isPrime": false,
+    "inStock": true
+  },
+  {
+    "Id": 11,
+    "title": "Nintendo Switch OLED Model - White",
+    "price": 349.99,
+    "discountPrice": 319.99,
+    "rating": 4.7,
+    "reviewCount": 2134,
+    "images": [
+      "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1607853202273-797f1c22a38e?w=500&h=500&fit=crop"
+    ],
+    "category": "Electronics",
+    "description": "Enhanced Nintendo Switch with 7-inch OLED screen, enhanced audio, and 64GB internal storage. Perfect for gaming at home or on the go.",
+    "specifications": {
+      "Display": "7-inch OLED touchscreen",
+      "Storage": "64GB internal",
+      "Battery": "4.5-9 hours",
+      "Connectivity": "Wi-Fi, Bluetooth 4.1",
+      "Weight": "420g (tablet only)"
+    },
+    "isPrime": true,
+    "inStock": true
+  },
+  {
+    "Id": 12,
+    "title": "Adidas Ultraboost 22 - Women's Running Shoes",
+    "price": 189.99,
+    "discountPrice": 149.99,
+    "rating": 4.4,
+    "reviewCount": 1876,
+    "images": [
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1605348532760-6753d2c43329?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1570464197285-9949814674a7?w=500&h=500&fit=crop"
+    ],
+    "category": "Fashion",
+    "description": "Premium running shoes with responsive Boost cushioning and Primeknit upper for ultimate comfort and performance.",
+    "specifications": {
+      "Upper": "Primeknit",
+      "Midsole": "Boost foam",
+      "Outsole": "Continental rubber",
+      "Weight": "8.8 oz",
+      "Drop": "10mm"
+    },
+    "isPrime": true,
+    "inStock": true
+  },
+  {
+    "Id": 13,
+    "title": "KitchenAid Stand Mixer - 5-Qt Artisan Series",
+    "price": 449.99,
+    "discountPrice": 349.99,
+    "rating": 4.8,
+    "reviewCount": 4567,
+    "images": [
+      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=500&fit=crop"
+    ],
+    "category": "Home & Garden",
+    "description": "Professional-grade stand mixer with tilt-head design, 5-quart capacity, and 10 speeds. Perfect for baking enthusiasts.",
+    "specifications": {
+      "Capacity": "5 Quart",
+      "Power": "325 Watts",
+      "Speeds": "10",
+      "Material": "Die-cast metal",
+      "Warranty": "1 year"
+    },
+    "isPrime": true,
+    "inStock": true
+  },
+  {
+    "Id": 14,
+    "title": "Patagonia Better Sweater Fleece Jacket - Men's",
+    "price": 139.99,
+    "discountPrice": 109.99,
+    "rating": 4.6,
+    "reviewCount": 2345,
+    "images": [
+      "https://images.unsplash.com/photo-1521957870370-1e8b6c7e3b51?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1554568218-0f1715e72254?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1575428652377-a2d80e2277fc?w=500&h=500&fit=crop"
+    ],
+    "category": "Fashion",
+    "description": "Warm, comfortable fleece jacket made from recycled polyester. Perfect for outdoor activities and casual wear.",
+    "specifications": {
+      "Material": "100% Recycled Polyester",
+      "Fit": "Regular",
+      "Features": "Full-zip, chest pocket",
+      "Weight": "567g",
+      "Sustainability": "Fair Trade Certified"
+    },
+    "isPrime": false,
+    "inStock": true
+  },
+  {
+    "Id": 15,
+    "title": "Atomic Habits by James Clear - Hardcover",
+    "price": 27.99,
+    "discountPrice": 19.99,
+    "rating": 4.8,
+    "reviewCount": 8765,
+    "images": [
+      "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=500&h=500&fit=crop"
+    ],
+    "category": "Books",
+    "description": "A practical guide to building good habits and breaking bad ones. Learn proven methods to achieve lasting change.",
+    "specifications": {
+      "Author": "James Clear",
+      "Pages": "320",
+      "Publisher": "Avery",
+      "Language": "English",
+      "Format": "Hardcover"
+    },
+    "isPrime": true,
+    "inStock": true
+  },
+  {
+    "Id": 16,
+    "title": "Fitbit Charge 5 Advanced Fitness Tracker",
+    "price": 179.99,
+    "discountPrice": 149.99,
+    "rating": 4.3,
+    "reviewCount": 3456,
+    "images": [
+      "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=500&h=500&fit=crop"
+    ],
+    "category": "Electronics",
+    "description": "Advanced fitness tracker with built-in GPS, heart rate monitoring, and up to 7-day battery life. Track your health 24/7.",
+    "specifications": {
+      "Display": "Color AMOLED",
+      "Battery": "Up to 7 days",
+      "GPS": "Built-in",
+      "Water Resistance": "50 meters",
+      "Compatibility": "iOS and Android"
+    },
+    "isPrime": true,
+    "inStock": true
+  },
+  {
+    "Id": 17,
+    "title": "Rare Beauty Soft Pinch Liquid Blush",
+    "price": 22.99,
+    "discountPrice": 18.99,
+    "rating": 4.7,
+    "reviewCount": 2134,
+    "images": [
+      "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1596704654774-e1b5b4ab5b93?w=500&h=500&fit=crop"
+    ],
+    "category": "Beauty",
+    "description": "Weightless liquid blush that blends seamlessly for a natural, healthy-looking flush. Long-wearing and buildable formula.",
+    "specifications": {
+      "Brand": "Rare Beauty",
+      "Shade": "Joy",
+      "Size": "0.5 fl oz",
+      "Finish": "Natural",
+      "Cruelty-Free": "Yes"
+    },
+    "isPrime": true,
+    "inStock": true
+  },
+  {
+    "Id": 18,
+    "title": "Yeti Rambler 20oz Tumbler with Handle",
+    "price": 39.99,
+    "discountPrice": 34.99,
+    "rating": 4.8,
+    "reviewCount": 5432,
+    "images": [
+      "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=500&h=500&fit=crop"
+    ],
+    "category": "Home & Garden",
+    "description": "Double-wall vacuum insulated tumbler that keeps drinks cold or hot for hours. Durable stainless steel construction.",
+    "specifications": {
+      "Capacity": "20 oz",
+      "Material": "18/8 Stainless Steel",
+      "Insulation": "Double-wall vacuum",
+      "Lid": "MagSlider",
+      "Dishwasher Safe": "Yes"
+    },
+    "isPrime": false,
+    "inStock": true
+  },
+  {
+    "Id": 19,
+    "title": "Wilson Tennis Racket - Pro Staff 97 V13",
+    "price": 249.99,
+    "discountPrice": 199.99,
+    "rating": 4.5,
+    "reviewCount": 876,
+    "images": [
+      "https://images.unsplash.com/photo-1595435742656-5272d0b1eb91?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=500&h=500&fit=crop"
+    ],
+    "category": "Sports",
+    "description": "Professional tennis racket with precision and control. Preferred by tennis professionals worldwide for its performance.",
+    "specifications": {
+      "Head Size": "97 sq in",
+      "Weight": "315g",
+      "Balance": "315mm",
+      "String Pattern": "16x19",
+      "Grip Size": "4 1/4 inches"
+    },
+    "isPrime": true,
+    "inStock": true
+  },
+  {
+    "Id": 20,
+    "title": "The Thursday Murder Club - Novel",
+    "price": 16.99,
+    "discountPrice": 12.99,
+    "rating": 4.4,
+    "reviewCount": 4567,
+    "images": [
+      "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=500&fit=crop",
+      "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=500&h=500&fit=crop"
+    ],
+    "category": "Books",
+    "description": "A charming mystery novel about four unlikely friends who meet weekly to investigate cold cases. Perfect blend of humor and intrigue.",
+    "specifications": {
+      "Author": "Richard Osman",
+      "Pages": "368",
+      "Publisher": "Penguin Books",
+      "Language": "English",
+      "Format": "Paperback"
+    },
+    "isPrime": true,
+    "inStock": true
+  }
+]

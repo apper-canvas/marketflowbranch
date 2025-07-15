@@ -1,0 +1,216 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'react-toastify/dist/ReactToastify.css';
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #F3F3F3;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Toast Customization */
+.Toastify__toast-container {
+  top: 20px !important;
+  right: 20px !important;
+  width: 320px !important;
+}
+
+.Toastify__toast {
+  padding: 12px 16px !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  font-size: 14px !important;
+  line-height: 1.4 !important;
+}
+
+.Toastify__toast--success {
+  background: linear-gradient(135deg, #067D62 0%, #059669 100%) !important;
+}
+
+.Toastify__toast--error {
+  background: linear-gradient(135deg, #D13212 0%, #EF4444 100%) !important;
+}
+
+.Toastify__toast--info {
+  background: linear-gradient(135deg, #0066C0 0%, #3B82F6 100%) !important;
+}
+
+.Toastify__toast--warning {
+  background: linear-gradient(135deg, #F0AD4E 0%, #F59E0B 100%) !important;
+}
+
+.Toastify__progress-bar {
+  background: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Skeleton Loading Animation */
+.skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200px 100%;
+  animation: shimmer 1.5s ease-in-out infinite;
+}
+
+/* Star Rating Component */
+.star-rating {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.star-rating .star {
+  color: #FFA500;
+  font-size: 14px;
+}
+
+.star-rating .star.empty {
+  color: #E5E7EB;
+}
+
+/* Prime Badge */
+.prime-badge {
+  background: linear-gradient(135deg, #00A8E1 0%, #0066C0 100%);
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Cart Icon Animation */
+@keyframes addToCart {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.cart-animation {
+  animation: addToCart 0.3s ease-in-out;
+}
+
+/* Product Image Hover Effect */
+.product-image {
+  transition: transform 0.3s ease;
+}
+
+.product-image:hover {
+  transform: scale(1.05);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F3F3F3;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D1D5DB;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9CA3AF;
+}
+
+/* Button Gradients */
+.btn-primary {
+  background: linear-gradient(135deg, #FF9900 0%, #FF6F00 100%);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #FF6F00 0%, #E65100 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 153, 0, 0.3);
+}
+
+.btn-secondary {
+  background: linear-gradient(135deg, #146EB4 0%, #1E40AF 100%);
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: linear-gradient(135deg, #1E40AF 0%, #1D4ED8 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(20, 110, 180, 0.3);
+}
+
+/* Card Hover Effects */
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Input Focus States */
+.input-focus:focus {
+  border-color: #FF9900;
+  box-shadow: 0 0 0 3px rgba(255, 153, 0, 0.1);
+}
+
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(135deg, #FF9900 0%, #FF6F00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Loading States */
+.loading-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+/* Badge Styles */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.badge-success {
+  background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+  color: white;
+}
+
+.badge-warning {
+  background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+  color: white;
+}
+
+.badge-error {
+  background: linear-gradient(135deg, #EF4444 0%, #DC2626 100%);
+  color: white;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+  .Toastify__toast-container {
+    width: 280px !important;
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+  }
+}

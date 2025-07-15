@@ -1,0 +1,128 @@
+[
+  {
+    "Id": 1,
+    "name": "Electronics",
+    "parentId": null,
+    "level": 1
+  },
+  {
+    "Id": 2,
+    "name": "Fashion",
+    "parentId": null,
+    "level": 1
+  },
+  {
+    "Id": 3,
+    "name": "Home & Garden",
+    "parentId": null,
+    "level": 1
+  },
+  {
+    "Id": 4,
+    "name": "Sports",
+    "parentId": null,
+    "level": 1
+  },
+  {
+    "Id": 5,
+    "name": "Books",
+    "parentId": null,
+    "level": 1
+  },
+  {
+    "Id": 6,
+    "name": "Beauty",
+    "parentId": null,
+    "level": 1
+  },
+  {
+    "Id": 7,
+    "name": "Smartphones",
+    "parentId": 1,
+    "level": 2
+  },
+  {
+    "Id": 8,
+    "name": "Laptops",
+    "parentId": 1,
+    "level": 2
+  },
+  {
+    "Id": 9,
+    "name": "Headphones",
+    "parentId": 1,
+    "level": 2
+  },
+  {
+    "Id": 10,
+    "name": "Gaming",
+    "parentId": 1,
+    "level": 2
+  },
+  {
+    "Id": 11,
+    "name": "Men's Clothing",
+    "parentId": 2,
+    "level": 2
+  },
+  {
+    "Id": 12,
+    "name": "Women's Clothing",
+    "parentId": 2,
+    "level": 2
+  },
+  {
+    "Id": 13,
+    "name": "Shoes",
+    "parentId": 2,
+    "level": 2
+  },
+  {
+    "Id": 14,
+    "name": "Kitchen",
+    "parentId": 3,
+    "level": 2
+  },
+  {
+    "Id": 15,
+    "name": "Appliances",
+    "parentId": 3,
+    "level": 2
+  },
+  {
+    "Id": 16,
+    "name": "Fitness",
+    "parentId": 4,
+    "level": 2
+  },
+  {
+    "Id": 17,
+    "name": "Outdoor",
+    "parentId": 4,
+    "level": 2
+  },
+  {
+    "Id": 18,
+    "name": "Fiction",
+    "parentId": 5,
+    "level": 2
+  },
+  {
+    "Id": 19,
+    "name": "Non-Fiction",
+    "parentId": 5,
+    "level": 2
+  },
+  {
+    "Id": 20,
+    "name": "Makeup",
+    "parentId": 6,
+    "level": 2
+  },
+  {
+    "Id": 21,
+    "name": "Skincare",
+    "parentId": 6,
+    "level": 2
+  }
+]
