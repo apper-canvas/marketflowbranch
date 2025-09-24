@@ -51,10 +51,10 @@ class OrderService {
         name: order.Name,
         tags: order.Tags,
         owner: order.Owner,
-        items: order.items_c ? JSON.parse(order.items_c) : [],
+items: order.items_c ? (typeof order.items_c === 'string' ? JSON.parse(order.items_c) : order.items_c) : [],
         total: order.total_c,
-        shippingAddress: order.shipping_address_c ? JSON.parse(order.shipping_address_c) : {},
-        paymentMethod: order.payment_method_c ? JSON.parse(order.payment_method_c) : {},
+shippingAddress: order.shipping_address_c ? (typeof order.shipping_address_c === 'string' ? JSON.parse(order.shipping_address_c) : order.shipping_address_c) : {},
+        paymentMethod: order.payment_method_c ? (typeof order.payment_method_c === 'string' ? JSON.parse(order.payment_method_c) : order.payment_method_c) : {},
         orderDate: order.order_date_c,
         status: order.status_c
       }));
@@ -98,10 +98,10 @@ class OrderService {
         name: order.Name,
         tags: order.Tags,
         owner: order.Owner,
-        items: order.items_c ? JSON.parse(order.items_c) : [],
+items: order.items_c ? (typeof order.items_c === 'string' ? JSON.parse(order.items_c) : order.items_c) : [],
         total: order.total_c,
-        shippingAddress: order.shipping_address_c ? JSON.parse(order.shipping_address_c) : {},
-        paymentMethod: order.payment_method_c ? JSON.parse(order.payment_method_c) : {},
+shippingAddress: order.shipping_address_c ? (typeof order.shipping_address_c === 'string' ? JSON.parse(order.shipping_address_c) : order.shipping_address_c) : {},
+        paymentMethod: order.payment_method_c ? (typeof order.payment_method_c === 'string' ? JSON.parse(order.payment_method_c) : order.payment_method_c) : {},
         orderDate: order.order_date_c,
         status: order.status_c
       };
@@ -166,16 +166,16 @@ class OrderService {
 name: created.Name,
             tags: created.Tags,
             owner: created.Owner,
-            items: created.items_c ? (() => {
+items: created.items_c ? (() => {
               try {
-                return JSON.parse(created.items_c);
+                return typeof created.items_c === 'string' ? JSON.parse(created.items_c) : created.items_c;
               } catch (e) {
                 return [];
               }
             })() : [],
             total: created.total_c,
-            shippingAddress: created.shipping_address_c ? JSON.parse(created.shipping_address_c) : {},
-            paymentMethod: created.payment_method_c ? JSON.parse(created.payment_method_c) : {},
+shippingAddress: created.shipping_address_c ? (typeof created.shipping_address_c === 'string' ? JSON.parse(created.shipping_address_c) : created.shipping_address_c) : {},
+            paymentMethod: created.payment_method_c ? (typeof created.payment_method_c === 'string' ? JSON.parse(created.payment_method_c) : created.payment_method_c) : {},
             orderDate: created.order_date_c,
             status: created.status_c
           };
@@ -246,15 +246,15 @@ name: updated.Name,
             tags: updated.Tags,
             owner: updated.Owner,
             items: updated.items_c ? (() => {
-              try {
-                return JSON.parse(updated.items_c);
+try {
+                return typeof updated.items_c === 'string' ? JSON.parse(updated.items_c) : updated.items_c;
               } catch (e) {
                 return [];
               }
             })() : [],
             total: updated.total_c,
             shippingAddress: updated.shipping_address_c ? JSON.parse(updated.shipping_address_c) : {},
-            paymentMethod: updated.payment_method_c ? JSON.parse(updated.payment_method_c) : {},
+paymentMethod: updated.payment_method_c ? (typeof updated.payment_method_c === 'string' ? JSON.parse(updated.payment_method_c) : updated.payment_method_c) : {},
             orderDate: updated.order_date_c,
             status: updated.status_c
           };
