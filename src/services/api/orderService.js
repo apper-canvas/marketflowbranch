@@ -46,15 +46,36 @@ class OrderService {
         return [];
       }
 
-      return response.data.map(order => ({
+return response.data.map(order => ({
         Id: order.Id,
         name: order.Name,
         tags: order.Tags,
-        owner: order.Owner,
-items: order.items_c ? (typeof order.items_c === 'string' ? JSON.parse(order.items_c) : order.items_c) : [],
+        owner: order.Owner, // Keep as plain string - no JSON parsing needed
+        items: order.items_c ? (() => {
+          try {
+            return typeof order.items_c === 'string' ? JSON.parse(order.items_c) : order.items_c;
+          } catch (e) {
+            console.error('Error parsing items_c:', e);
+            return [];
+          }
+        })() : [],
         total: order.total_c,
-shippingAddress: order.shipping_address_c ? (typeof order.shipping_address_c === 'string' ? JSON.parse(order.shipping_address_c) : order.shipping_address_c) : {},
-        paymentMethod: order.payment_method_c ? (typeof order.payment_method_c === 'string' ? JSON.parse(order.payment_method_c) : order.payment_method_c) : {},
+        shippingAddress: order.shipping_address_c ? (() => {
+          try {
+            return typeof order.shipping_address_c === 'string' ? JSON.parse(order.shipping_address_c) : order.shipping_address_c;
+          } catch (e) {
+            console.error('Error parsing shipping_address_c:', e);
+            return {};
+          }
+        })() : {},
+        paymentMethod: order.payment_method_c ? (() => {
+          try {
+            return typeof order.payment_method_c === 'string' ? JSON.parse(order.payment_method_c) : order.payment_method_c;
+          } catch (e) {
+            console.error('Error parsing payment_method_c:', e);
+            return {};
+          }
+        })() : {},
         orderDate: order.order_date_c,
         status: order.status_c
       }));
@@ -93,15 +114,36 @@ shippingAddress: order.shipping_address_c ? (typeof order.shipping_address_c ===
       }
 
       const order = response.data;
-      return {
+return {
         Id: order.Id,
         name: order.Name,
         tags: order.Tags,
-        owner: order.Owner,
-items: order.items_c ? (typeof order.items_c === 'string' ? JSON.parse(order.items_c) : order.items_c) : [],
+        owner: order.Owner, // Keep as plain string - no JSON parsing needed
+        items: order.items_c ? (() => {
+          try {
+            return typeof order.items_c === 'string' ? JSON.parse(order.items_c) : order.items_c;
+          } catch (e) {
+            console.error('Error parsing items_c:', e);
+            return [];
+          }
+        })() : [],
         total: order.total_c,
-shippingAddress: order.shipping_address_c ? (typeof order.shipping_address_c === 'string' ? JSON.parse(order.shipping_address_c) : order.shipping_address_c) : {},
-        paymentMethod: order.payment_method_c ? (typeof order.payment_method_c === 'string' ? JSON.parse(order.payment_method_c) : order.payment_method_c) : {},
+        shippingAddress: order.shipping_address_c ? (() => {
+          try {
+            return typeof order.shipping_address_c === 'string' ? JSON.parse(order.shipping_address_c) : order.shipping_address_c;
+          } catch (e) {
+            console.error('Error parsing shipping_address_c:', e);
+            return {};
+          }
+        })() : {},
+        paymentMethod: order.payment_method_c ? (() => {
+          try {
+            return typeof order.payment_method_c === 'string' ? JSON.parse(order.payment_method_c) : order.payment_method_c;
+          } catch (e) {
+            console.error('Error parsing payment_method_c:', e);
+            return {};
+          }
+        })() : {},
         orderDate: order.order_date_c,
         status: order.status_c
       };
@@ -165,17 +207,32 @@ shippingAddress: order.shipping_address_c ? (typeof order.shipping_address_c ===
             Id: created.Id,
 name: created.Name,
             tags: created.Tags,
-            owner: created.Owner,
-items: created.items_c ? (() => {
+owner: created.Owner, // Keep as plain string - no JSON parsing needed
+            items: created.items_c ? (() => {
               try {
                 return typeof created.items_c === 'string' ? JSON.parse(created.items_c) : created.items_c;
               } catch (e) {
+                console.error('Error parsing items_c in create:', e);
                 return [];
               }
             })() : [],
             total: created.total_c,
-shippingAddress: created.shipping_address_c ? (typeof created.shipping_address_c === 'string' ? JSON.parse(created.shipping_address_c) : created.shipping_address_c) : {},
-            paymentMethod: created.payment_method_c ? (typeof created.payment_method_c === 'string' ? JSON.parse(created.payment_method_c) : created.payment_method_c) : {},
+            shippingAddress: created.shipping_address_c ? (() => {
+              try {
+                return typeof created.shipping_address_c === 'string' ? JSON.parse(created.shipping_address_c) : created.shipping_address_c;
+              } catch (e) {
+                console.error('Error parsing shipping_address_c in create:', e);
+                return {};
+              }
+            })() : {},
+            paymentMethod: created.payment_method_c ? (() => {
+              try {
+                return typeof created.payment_method_c === 'string' ? JSON.parse(created.payment_method_c) : created.payment_method_c;
+              } catch (e) {
+                console.error('Error parsing payment_method_c in create:', e);
+                return {};
+              }
+            })() : {},
             orderDate: created.order_date_c,
             status: created.status_c
           };
@@ -245,16 +302,31 @@ shippingAddress: created.shipping_address_c ? (typeof created.shipping_address_c
 name: updated.Name,
             tags: updated.Tags,
             owner: updated.Owner,
-            items: updated.items_c ? (() => {
-try {
+items: updated.items_c ? (() => {
+              try {
                 return typeof updated.items_c === 'string' ? JSON.parse(updated.items_c) : updated.items_c;
               } catch (e) {
+                console.error('Error parsing items_c in update:', e);
                 return [];
               }
             })() : [],
             total: updated.total_c,
-            shippingAddress: updated.shipping_address_c ? JSON.parse(updated.shipping_address_c) : {},
-paymentMethod: updated.payment_method_c ? (typeof updated.payment_method_c === 'string' ? JSON.parse(updated.payment_method_c) : updated.payment_method_c) : {},
+            shippingAddress: updated.shipping_address_c ? (() => {
+              try {
+                return typeof updated.shipping_address_c === 'string' ? JSON.parse(updated.shipping_address_c) : updated.shipping_address_c;
+              } catch (e) {
+                console.error('Error parsing shipping_address_c in update:', e);
+                return {};
+              }
+            })() : {},
+            paymentMethod: updated.payment_method_c ? (() => {
+              try {
+                return typeof updated.payment_method_c === 'string' ? JSON.parse(updated.payment_method_c) : updated.payment_method_c;
+              } catch (e) {
+                console.error('Error parsing payment_method_c in update:', e);
+                return {};
+              }
+            })() : {},
             orderDate: updated.order_date_c,
             status: updated.status_c
           };
