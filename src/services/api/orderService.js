@@ -163,10 +163,16 @@ class OrderService {
           toast.success("Order created successfully!");
           return {
             Id: created.Id,
-            name: created.Name,
+name: created.Name,
             tags: created.Tags,
             owner: created.Owner,
-            items: created.items_c ? JSON.parse(created.items_c) : [],
+            items: created.items_c ? (() => {
+              try {
+                return JSON.parse(created.items_c);
+              } catch (e) {
+                return [];
+              }
+            })() : [],
             total: created.total_c,
             shippingAddress: created.shipping_address_c ? JSON.parse(created.shipping_address_c) : {},
             paymentMethod: created.payment_method_c ? JSON.parse(created.payment_method_c) : {},
@@ -236,10 +242,16 @@ class OrderService {
           toast.success("Order updated successfully!");
           return {
             Id: updated.Id,
-            name: updated.Name,
+name: updated.Name,
             tags: updated.Tags,
             owner: updated.Owner,
-            items: updated.items_c ? JSON.parse(updated.items_c) : [],
+            items: updated.items_c ? (() => {
+              try {
+                return JSON.parse(updated.items_c);
+              } catch (e) {
+                return [];
+              }
+            })() : [],
             total: updated.total_c,
             shippingAddress: updated.shipping_address_c ? JSON.parse(updated.shipping_address_c) : {},
             paymentMethod: updated.payment_method_c ? JSON.parse(updated.payment_method_c) : {},
